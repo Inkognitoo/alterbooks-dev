@@ -1,0 +1,114 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #504c48;
+  display: flex;
+  flex-direction: column;
+}
+@font-face {
+  font-family: "Regular";
+  src: url("/font/Kurale-Regular.ttf");
+}
+.header__books {
+  height: 68px;
+  background-image: url("/img/books.png");
+  background-repeat: repeat-x;
+  background-color: #353331;
+}
+.header__desk {
+  display: flex;
+  height: 55px;
+  background: #4c4135;
+  background: radial-gradient(circle at 50% 0px, #75644c, #4c4135, #4c4135);
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.header__logo {
+  top: -42px;
+  position: relative;
+}
+.header__title {
+  align-self: center;
+}
+.header__menu {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.header__login-button {
+  align-self: center;
+  margin-right: auto;
+}
+.login-button {
+  border-style: dashed;
+  border-width: 1px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 0 5px;
+  border-color: #b09f89;
+  font-family: "Regular";
+  font-size: 25px;
+  line-height: 1.2;
+  color: #b09f89;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.menu__item {
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 25px;
+  color: #f0b055;
+}
+.menu__item:first-child {
+  padding-left: 0;
+}
+.menu__item:last-child {
+  padding-right: 0;
+}
+.menu__item:not(:last-child) {
+  border-right: 1px solid black;
+}
+.menu__link {
+  font-family: "Regular";
+}
+.logo {
+  width: 120px;
+  height: 120px;
+}
+.title {
+  font-family: "Regular";
+  font-size: 40px;
+  color: #f0b055;
+}
+.footer {
+  margin-top: auto;
+  background-image: linear-gradient(to bottom, #524636, #826f5b 25%, #524636);
+}
+.footer__head {
+  height: 20px;
+  background-color: #968371;
+  margin-bottom: 2px;
+}
+.footer__body {
+  display: flex;
+}
+.footer__column_align_left {
+  margin-left: 63px;
+}
+.footer__column_align_right {
+  margin-left: auto;
+  margin-right: 63px;
+}
+.column {
+  width: 135px;
+  height: 397px;
+}
