@@ -9,8 +9,12 @@ body {
   flex-direction: column;
 }
 @font-face {
-  font-family: "Regular";
-  src: url("/font/Kurale-Regular.ttf");
+  font-family: "Kurale Regular";
+  src: url("/font/Kurale-Regular.woff") format('woff'), url("/font/Kurale-Regular.woff2") format('woff2');
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/font/MyriadPro-Regular.woff") format('woff'), url("/font/MyriadPro-Regular.woff2") format('woff2');
 }
 .header__books {
   height: 68px;
@@ -52,7 +56,7 @@ body {
   padding-right: 70px;
   border-radius: 0 5px;
   border-color: #b09f89;
-  font-family: "Regular";
+  font-family: "Kurale Regular", sans-serif;
   font-size: 25px;
   line-height: 1.2;
   color: #b09f89;
@@ -62,23 +66,69 @@ body {
   list-style: none;
   padding: 0;
 }
-.menu__item {
+.header-menu__item {
   padding-right: 25px;
   padding-left: 25px;
   font-size: 25px;
   color: #f0b055;
 }
-.menu__item:first-child {
+.header-menu__item:first-child {
   padding-left: 0;
 }
-.menu__item:last-child {
+.header-menu__item:last-child {
   padding-right: 0;
 }
-.menu__item:not(:last-child) {
+.header-menu__item:not(:last-child) {
   border-right: 1px solid black;
 }
-.menu__link {
-  font-family: Regular, sans-serif;
+.header-menu__link {
+  font-family: "Kurale Regular", sans-serif;
+}
+.footer-menu {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 22px;
+  color: #d6d0c9;
+}
+.footer-menu__title {
+  text-transform: uppercase;
+  border-bottom: 1px solid #d6d0c9;
+  padding-right: 15px ;
+}
+.footer-menu__column {
+  list-style: none;
+  padding: 0;
+}
+.footer-menu__item {
+  margin-right: 50px;
+}
+.footer-menu__item:last-child {
+  margin-right: 0;
+}
+.footer-menu__sub-item {
+  margin-top: 15px;
+}
+.footer-menu__link {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer-menu__link_icon_vk:before {
+  content: url("/img/social-icon_vk.png");
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.footer-menu__link_icon_fb:before {
+  content: url("/img/social-icon_fb.png");
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.footer-menu__link_icon_tw:before {
+  content: url("/img/social-icon_tw.png");
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 .logo {
   background-image: url("/img/logo.svg");
@@ -87,7 +137,7 @@ body {
   height: 120px;
 }
 .title {
-  font-family: "Regular";
+  font-family: "Kurale Regular", sans-serif;
   font-size: 40px;
   color: #f0b055;
 }
@@ -103,8 +153,14 @@ body {
 .footer__body {
   display: flex;
 }
+.footer__menu {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
 .footer__column_align_left {
   margin-left: 63px;
+  margin-right: auto;
 }
 .footer__column_align_right {
   margin-left: auto;
